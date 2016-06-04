@@ -8,7 +8,7 @@
     
 ### Express安装入门与模版引擎ejs
 
-**Express官网** [http://expressjs.com/](http://expressjs.com/)
+[Express官网](http://expressjs.com/)
 
 
 
@@ -61,6 +61,8 @@ app.listen(8100,function(){ console.log("Server Start!");});
 
 ### Mongodb安装入门
 
+[Mongodb官网](https://www.mongodb.com/download-center?jmp=nav#community)
+
 ###本教程基于win7 64位作为案例###
 
 #### 1.下载MongoDB ####
@@ -69,7 +71,6 @@ app.listen(8100,function(){ console.log("Server Start!");});
 
 去官网下载Mongodb安装包
 win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
-##Mongodb官网## [https://www.mongodb.com/download-center?jmp=nav#communit](https://www.mongodb.com/download-center?jmp=nav#community)
 
 ```
 
@@ -98,11 +99,10 @@ D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 
 出现如下,说明MongoDB服务启动 (MongoDB服务端的默认连接端口:27017)
 
-![image](http://chuantu.biz/t5/5/1465021812x3738746601.png)
-
 注意：如果需要卸载服务，执行命令：sc delete MongoDB
 
 ```
+![image](http://chuantu.biz/t5/5/1465021812x3738746601.png)
 
 #### 5.测试MongoDB ####
 
@@ -127,9 +127,10 @@ D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 检查是否设置成功，打开控制面板——管理工具——服务
 
 出现如下，说明设置成功
-![image](http://chuantu.biz/t5/5/1465022633x3738746601.png)
+
 
 ```
+![image](http://chuantu.biz/t5/5/1465022633x3738746601.png)
 
 #### 7.客户端连接验证 ####
 
