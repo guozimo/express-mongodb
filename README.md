@@ -130,7 +130,7 @@ D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 
 
 ```
-![image](http://chuantu.biz/t5/5/1465022633x3738746601.png)
+![image](http://imgdata.hoop8.com/1606/8863072713921.png)
 
 #### 7.客户端连接验证 ####
 
