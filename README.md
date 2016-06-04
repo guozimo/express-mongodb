@@ -11,7 +11,7 @@
 
 
 
-###### 1. 安装express ######
+####### 1. 安装express #######
 ```bash
 
 执行命令 ： npm install -g express;   //全局安装express
@@ -19,7 +19,7 @@
 执行命令 :  express -V  //检查是否安装好 (V 是大写字母)
 
 ```
-###### 2. 创建Express项目 ######
+####### 2. 创建Express项目 #######
 ```bash
 
 然后就能够在目标路径下通过express命令创建项目。如需要在 D盘 的 project文件夹下创建项目 expressDemo：
@@ -29,7 +29,7 @@
 4.    执行命令：npm start；服务器运行，在浏览器运行URL：localhost:3000，即可看到默认的express页面。
 
 ```
-###### 3. 修改端口 ######
+####### 3. 修改端口 #######
 ```bash
 
 在项目根目录下找到app.js并增加端口监听
@@ -37,7 +37,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 1.    执行命令：node app.js
 
 ```
-###### 4. ejs模板引擎 ######
+####### 4. ejs模板引擎 #######
 
 ```bash
 
@@ -48,7 +48,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 4.    执行命令：npm start；服务器运行，在浏览器运行URL：localhost:3000，即可看到默认的express页面。
 
 ```
-###### 5. 使用supervisor调式 ######
+####### 5. 使用supervisor调式 #######
 
 ```bash
 
@@ -64,7 +64,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 
 ###本教程基于win7 64位作为案例###
 
-#### 1.下载MongoDB ####
+##### 1.下载MongoDB #####
 
 ```bash
 
@@ -73,7 +73,7 @@ win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
 
 ```
 
-#### 2.设置MongoDB目录 ####
+##### 2.设置MongoDB目录 #####
 
 ```bash
 
@@ -81,7 +81,7 @@ win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
 但其中这里安装路径，我改成 D盘 ，再重命名为##MongoDB# ，即真实路径为“D:\MongoDB”
 
 ```
-#### 3.设置数据文件路径 ####
+##### 3.设置数据文件路径 #####
 
 ```bash
 
@@ -89,7 +89,7 @@ win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
 
 ```
 
-#### 4.启动MongoDB服务 ####
+##### 4.启动MongoDB服务 #####
 
 ```bash
 
@@ -103,7 +103,7 @@ D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 ```
 ![image](http://chuantu.biz/t5/5/1465021812x3738746601.png)
 
-#### 5.测试MongoDB ####
+##### 5.测试MongoDB #####
 
 ```bash
 
@@ -116,7 +116,7 @@ D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 
 ```
 
-#### 6.将MongoDB作为 Windows 服务随机启动 ####
+##### 6.将MongoDB作为 Windows 服务随机启动 #####
 
 ```bash
 
@@ -131,7 +131,7 @@ D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 ```
 ![image](http://imgdata.hoop8.com/1606/8863072713921.png)
 
-#### 7.客户端连接验证 ####
+##### 7.客户端连接验证 #####
 
 ```bash
 
@@ -144,7 +144,7 @@ connecting to: test
 
 ```
 
-#### 8.查看MongoDB日志 ####
+##### 8.查看MongoDB日志 #####
 
 ```bash
 
