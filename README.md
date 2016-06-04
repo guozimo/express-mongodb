@@ -11,7 +11,7 @@
 
 
 
-####### 1. 安装express #######
+##### 1. 安装express #####
 ```bash
 
 执行命令 ： npm install -g express;   //全局安装express
@@ -19,7 +19,7 @@
 执行命令 :  express -V  //检查是否安装好 (V 是大写字母)
 
 ```
-####### 2. 创建Express项目 #######
+##### 2. 创建Express项目 #####
 ```bash
 
 然后就能够在目标路径下通过express命令创建项目。如需要在 D盘 的 project文件夹下创建项目 expressDemo：
@@ -29,7 +29,7 @@
 4.    执行命令：npm start；服务器运行，在浏览器运行URL：localhost:3000，即可看到默认的express页面。
 
 ```
-####### 3. 修改端口 #######
+##### 3. 修改端口 #####
 ```bash
 
 在项目根目录下找到app.js并增加端口监听
@@ -37,7 +37,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 1.    执行命令：node app.js
 
 ```
-####### 4. ejs模板引擎 #######
+##### 4. ejs模板引擎 #####
 
 ```bash
 
@@ -48,7 +48,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 4.    执行命令：npm start；服务器运行，在浏览器运行URL：localhost:3000，即可看到默认的express页面。
 
 ```
-####### 5. 使用supervisor调式 #######
+##### 5. 使用supervisor调式 #####
 
 ```bash
 
