@@ -8,14 +8,12 @@
     
 ### Express安装入门与模版引擎ejs
 
-```bash
+**Express官网** [http://expressjs.com/](http://expressjs.com/)
 
-   **Express官网** [http://expressjs.com/](http://expressjs.com/)
 
-``` 
 
 #### 1. 安装express
-```javascript
+```bash
 
 执行命令 ： npm install -g express;   //全局安装express
 执行命令 ： npm install -g express-generator;  //安装express到npm-module，在express4.0之后，还需要安装express-generator 来完成express项目的创建，
@@ -23,7 +21,7 @@
 
 ```
 #### 2. 创建Express项目
-```javascript
+```bash
 
 然后就能够在目标路径下通过express命令创建项目。如需要在 D盘 的 project文件夹下创建项目 expressDemo：
 1.    进入D盘project目录下：
@@ -33,7 +31,7 @@
 
 ```
 #### 3. 修改端口
-```javascript
+```bash
 
 在项目根目录下找到app.js并增加端口监听
 app.listen(8100,function(){ console.log("Server Start!");});
@@ -42,7 +40,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 ```
 #### 4. ejs模板引擎
 
-```javascript
+```bash
 
 在上面创建的testWebApp中express默认使用的模版擎为jade，个人觉得jade虽然简洁但不直观，所以选择了更易上手的ejs。
 1.    进入D盘project目录下：
@@ -53,7 +51,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 ```
 #### 5. 使用supervisor调式
 
-```javascript
+```bash
 
 执行命令 ： npm -g install supervisor   //全局安装supervisor
 执行命令 ： 项目下运行该命令 supervisor app.js
@@ -63,9 +61,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 
 ### Mongodb安装入门
 
-##本教程基于win7 64位作为案例##
-
-```bash
+###本教程基于win7 64位作为案例###
 
 #### 1.下载MongoDB ####
 
@@ -73,7 +69,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 
 去官网下载Mongodb安装包
 win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
-##Mongodb官网##（https://www.mongodb.com/download-center?jmp=nav#community）
+##Mongodb官网## [https://www.mongodb.com/download-center?jmp=nav#communit](https://www.mongodb.com/download-center?jmp=nav#community)
 
 ```
 
@@ -84,6 +80,7 @@ win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
 安装教程很简单，一直默认都可以的。
 但其中这里安装路径，我改成 D盘 ，再重命名为##MongoDB# ，即真实路径为“D:\MongoDB”
 
+```
 #### 3.设置数据文件路径 ####
 
 ```bash
@@ -100,8 +97,8 @@ win7版本，下载选择 #mongodb-win32-x86_64-2008plus-ssl-3.2.6-signed.msi#
 D:\MongoDB\bin\mongod.exe --dbpath=d:\data\db
 
 出现如下,说明MongoDB服务启动 (MongoDB服务端的默认连接端口:27017)
-http://chuantu.biz/t5/5/1465021812x3738746601.png
 
+![image](http://chuantu.biz/t5/5/1465021812x3738746601.png)
 
 注意：如果需要卸载服务，执行命令：sc delete MongoDB
 
@@ -130,7 +127,7 @@ http://chuantu.biz/t5/5/1465021812x3738746601.png
 检查是否设置成功，打开控制面板——管理工具——服务
 
 出现如下，说明设置成功
-http://chuantu.biz/t5/5/1465022633x3738746601.png
+![image](http://chuantu.biz/t5/5/1465022633x3738746601.png)
 
 ```
 
@@ -144,6 +141,8 @@ is not installed, will zero-out data files
 MongoDB shell version: 3.2.6
 connecting to: test
 >
+
+```
 
 #### 8.查看MongoDB日志 ####
 
