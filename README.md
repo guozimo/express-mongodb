@@ -5,7 +5,7 @@
     下载地址：[http://nodejs.cn](http://nodejs.cn)（中文版）
     下载安装完成，打开Node的控制台窗口，输入：node -v
     
-### Express安装入门与模版引擎ejs
+### Express安装入门与模版引擎ejs ###
 
 [Express官网](http://expressjs.com/)
 
@@ -15,7 +15,6 @@
 ```bash
 
 执行命令 ： npm install -g express;   //全局安装express
-执行命令 ： npm install -g express-generator;  //安装express到npm-module，在express4.0之后，还需要安装express-generator 来完成express项目的创建，
 执行命令 :  express -V  //检查是否安装好 (V 是大写字母)
 
 ```
@@ -33,7 +32,9 @@
 ```bash
 
 在项目根目录下找到app.js并增加端口监听
-app.listen(8100,function(){ console.log("Server Start!");});
+app.listen(8100,function(){ 
+    console.log("Server Start!");
+});
 1.    执行命令：node app.js
 
 ```
@@ -44,7 +45,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 在上面创建的testWebApp中express默认使用的模版擎为jade，个人觉得jade虽然简洁但不直观，所以选择了更易上手的ejs。
 1.    进入D盘project目录下：
 2.    执行命令：express -e expressDemo2 ；
-3.    执行命令：cd expressDemo2 && npm install ; 该语句会进入项目的根目录即 expressDemo目录下并继续执行命令npm install 安装项目的依赖
+3.    执行命令：cd expressDemo2 && npm install ; 该语句会进入项目的根目录即 expressDemo2目录下并继续执行命令npm install 安装项目的依赖
 4.    执行命令：npm start；服务器运行，在浏览器运行URL：localhost:3000，即可看到默认的express页面。
 
 ```
@@ -58,7 +59,7 @@ app.listen(8100,function(){ console.log("Server Start!");});
 ```
 ---
 
-### Mongodb安装入门
+### Mongodb安装入门 ###
 
 [Mongodb官网](https://www.mongodb.com/download-center?jmp=nav#community)
 
@@ -153,3 +154,8 @@ http://localhost:27017/可以看到如下提示：
 It looks like you are trying to access MongoDB over HTTP on the native driver port.
 
 ```
+
+---
+### Mongodb 可视化工具 ###
+
+[mongochef] (http://3t.io/mongochef/)

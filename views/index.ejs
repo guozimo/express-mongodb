@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Required meta tags always come first -->
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="stylesheets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
   </head>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+
+    <header class="navbar navbar-light navbar-static-top bd-navbar" role="banner">
+          <div class="clearfix">
+            <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+              ☰
+            </button>
+            <a class="navbar-brand hidden-sm-up" href="/project/bootstrap4/">
+              Node+Express+Mongodb
+            </a>
+          </div>
+          <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
+            <nav class="nav navbar-nav">
+              <a class="nav-item nav-link " href="/">首页</a>
+              <a class="nav-item nav-link active" href="/">文档</a>
+              <a class="nav-item nav-link " href="/">实例</a>
+            </nav>
+          </div>
+    </header>
+
+
+    <div class="bd-pageheader">
+      <div class="container">
+                
+              <h1>Node+Express+Mongodb</h1>
+              <p class="lead">
+                使用基于Node开发的express框架+Mongondb数据库开发
+              </p>
+              <p>
+              </p>
+              <p style="font-size:14px;">
+                -本章实例由vincentDu开发
+              </p>
+        </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="card-deck-wrapper">
+        <div class="card-deck">
+          <% data.forEach(function(item){ %>
+            <div class="card card-item">
+              <img class="card-img-top" src="<%= item.imgsrc %>" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title"><%= item.title %></h4>
+                <p class="card-text"><%= item.introduction %></p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+
+          <% }) %>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    	$(function() {
+            $("#chkbtn").click(function() {
+                chkUserMsg();
+            });
+
+
+
+    		function chkUserMsg(){
+    			var username = $("#username").val();
+
+    			$.ajax({
+    				url: '/chkMsg',
+    				type: 'POST',
+    				data: {username: username},
+	    			})
+	    			.done(function() {
+	    				console.log("success");
+	    			})
+	    			.fail(function() {
+	    				console.log("error");
+	    			})
+	    			.always(function() {
+	    				console.log("complete");
+	    			});
+    		}
+    	
+    	})
+    </script>
   </body>
 </html>
